@@ -12,16 +12,16 @@ function calcularSuperficie(superficieEdificio, maquinas) {
     }
 
     if (superficieTotalMaquinas > superficieEdificio) {
-        return "Las maquinas ocupan mas superficie de la disponible en el edificio.";
+        return "Las maquinas ocupan mas superficie de la disponible. Muy mal";
     } else {
-        return "Las maquinas no ocupan mas superficie de la disponible en el edificio.";
+        return "Las maquinas no ocupan mas superficie. Muy bien!";
     }
 }
 
 let superficieEdificio = 50; 
 
 let maquinas = [
-    { nombreMaquina: "Torno Industrial", superficieDeOperacionRequerida: 40 },
+    { nombreMaquina: "Torno industrial", superficieDeOperacionRequerida: 40 },
 ]
 
 let resultado = calcularSuperficie(superficieEdificio, maquinas);
